@@ -1,0 +1,25 @@
+# Anchor / Cargo build artifacts
+target/
+.anchor/
+test-ledger/
+
+# Program keypair — the pubkey is hardcoded in declare_id!() but the secret
+# stays out of git. Back it up separately.
+programs/*/*-keypair.json
+
+# node / ts deps
+node_modules/
+dist/
+package-lock.json
+yarn.lock
+
+# editors / OS
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea
+
+# SSH/TLS private keys — never commit
+*.pem
+*.ppk

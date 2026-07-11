@@ -1,0 +1,20 @@
+{
+  "name": "occa-market-programs-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Smoke tests + bootstrap scripts for the OCCA Open Market settlement program",
+  "scripts": {
+    "bootstrap": "ts-node tests/bootstrap.ts",
+    "claim": "ts-node tests/claim.ts"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.31.0",
+    "@solana/web3.js": "^1.95.0"
+  },
+  "devDependencies": {
+    "@solana/spl-token": "^0.4.14",
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}
